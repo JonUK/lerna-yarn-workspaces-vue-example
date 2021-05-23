@@ -1,6 +1,8 @@
 {
   "files": [],
   "references": [
-    { "path": "example" }
+    { "path": "data-table" },
+    { "path": "example" },
+    { "path": "table-row" }
   ]
 }

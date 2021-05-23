@@ -10,21 +10,36 @@
     "packages/*"
   ],
   "scripts": {
+    "boot": "yarn global add lerna && lerna bootstrap",
     "clean": "scripty",
     "build": "scripty",
     "test": "scripty",
-    "lint": "scripty"
+    "lint": "scripty",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "scripty": {
     "path": "./scripty-scripts/workspace"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/vue": "^6.2.9",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
+    "babel-loader": "^8.2.2",
+    "babel-preset-vue": "^2.0.2",
     "eslint": "^7.11.0",
     "husky": "^4.3.0",
     "rimraf": "^3.0.2",
     "scripty": "^2.0.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
   }
 }

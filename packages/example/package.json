@@ -1,0 +1,24 @@
+{
+  "name": "@stratus/ui-example",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/",
+  "description": "An empty package acting as a template for creating a new package",
+  "author": "Jon Keeping",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist *.tsbuildinfo",
+    "build": "scripty",
+    "test": "scripty",
+    "lint": "scripty"
+  },
+  "scripty": {
+    "path": "../../scripty-scripts/packages"
+  },
+  "dependencies": {
+    "date-fn": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0"
+  }
+}

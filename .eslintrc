@@ -13,6 +13,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
     "prefer-const": "error",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-call": "off",

@@ -1,4 +1,4 @@
-import { format } from "date-fns";
+import { format } from 'date-fns';
 
 /**
  * Format a timestamp as a string
@@ -6,5 +6,5 @@ import { format } from "date-fns";
  * @public
  */
 export function formatTimestamp(date: Date | number): string {
-    return format(date, "MMM dd, yyyy HH:MM:SS a");
+    return format(date, 'MMM dd, yyyy HH:MM:SS a');
 }
